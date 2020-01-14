@@ -1,0 +1,31 @@
+
+cookbook = {}
+
+def add_recipe(name, ingredients, meal, prep_time) :
+    new_recipe = {
+        "ingredients": ingredients,
+        "meal": meal,
+        "prep_time": prep_time
+    }
+    cookbook[name] = new_recipe
+
+def del_recipe(name) :
+    cookbook.pop(name)
+
+def print_recipe(name) :
+    print("Recipe for cake:\n"
+          + "Ingredients list: " + str(cookbook[name]["ingredients"]) + "\n"
+          + "To be eaten for " + str(cookbook[name]["meal"]) + ".\n"
+          + "Takes " + str(cookbook[name]["prep_time"]) + " minutes of cooking.")
+
+def init_cookbook() :
+    add_recipe("sandwich", ["ham", "bread", "cheese", "tomatoes"], "lunch", 10)
+    add_recipe("cake", ["flour", "sugar", "eggs"], "dessert", 60)
+    add_recipe("salad", ["avocado", "arugula", "tomatoes", "spinach"], "lunch", 15)
+
+def print_selection_menu() :
+    
+
+init_cookbook()
+print_recipe("sandwich")
+    

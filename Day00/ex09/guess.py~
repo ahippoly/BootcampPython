@@ -1,0 +1,4 @@
+print("This is an interactive guessing game!\n"
++ "You have to enter a number between 1 and 99 to find out the secret number.\n"
++ "Type 'exit' to end the game.\n"
++ "Good luck!")

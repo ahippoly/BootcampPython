@@ -1,0 +1,9 @@
+import sys
+import re
+
+arg = sys.argv
+
+if (len(arg) > 2) :
+    print(type(arg[1]))
+    words = re.findall(["a-zA-Z"], arg[1])
+    #print(words)

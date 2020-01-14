@@ -1,0 +1,21 @@
+import sys
+
+def print_usage() :
+    print("Usage: python operations.py
+Example:
+    python operations.py 10 3")
+
+arg = sys.argv
+arg_count = len(arg)
+
+if arg_count < 3 :
+    print("InputError: 2 arguments required\n")
+    print_usage()
+elif ar_count >3 :
+    print("InputError: too many arguments\n")
+    print_usage()
+else :
+    nb1= argv[1]
+    nb2= argv[2]
+    if not isinstance(nb1, int)ornotisinstance(nb2, int) :
+        print("InputError: only numbers\n")
